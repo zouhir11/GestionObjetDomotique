@@ -1,0 +1,16 @@
+<html>
+        <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <table>
+        <tr>
+            <td><input type="text" name="nomDObjet" ngModel ></td>
+            <td><input type="text" name="emplacementDOobjet" ngModel ></td>
+            <td><select name="statutDObjet" ngModel ><option>allumé</option><option>etendu</option></select> </td>
+            <td><select name="estConnecte" ngModel ><option>oui</option><option>non</option></select> </td>
+            <td><button type="submit">ajouter objet</button></td>
+        </tr>
+    </table>
+    </form>
+</html>
+
+
+

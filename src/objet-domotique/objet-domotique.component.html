@@ -1,0 +1,26 @@
+<html>
+<table border="2">
+    <tr>
+            <th>nomDObjet</th>
+            <th>emplacementDOobjet</th>
+            <th>statutDObjet</th>
+            <th>estConnecte</th>
+            <th>alumer ou ettendre</th>
+            <th>connecter ou deconnecter</th>
+    </tr>
+    <tr *ngFor="let objet of objets">
+        <td>{{objet.nomDObjet}}</td>
+        <td>{{objet.emplacementDOobjet}}</td>
+        <td>{{objet.statutDObjet}}</td>
+        <td>{{objet.estConnecte}}</td>
+        <td><input type="button" value="allumer" (click)="allumer(objet)"><input type="button" value="ettendre" (click)="ettendre(objet)"></td>
+        <td><input type="button" value="connecter" (click)="connecter(objet)"><input type="button" value="deconnecter" (click)="deconnecter(objet)"></td>
+    </tr>
+</table>
+<br><br>
+<input type="button" value="allumerTout" (click)="allumerTout()"><input type="button" value="ettendreTout" (click)="ettendreTout()">
+<br><br>
+<input type="button" value="connecterTout" (click)="connecterTout()"><input type="button" value="deconnecterTout" (click)="deconnecterTout()">
+</html>
+
+
